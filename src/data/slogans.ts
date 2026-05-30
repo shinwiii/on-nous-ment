@@ -1,0 +1,130 @@
+export interface SloganCategory {
+  id: string;
+  name: string;
+  icon: string;
+  slogans: string[];
+}
+
+export const sloganCategories: SloganCategory[] = [
+  {
+    id: "directs",
+    name: "Statements directs",
+    icon: "🔴",
+    slogans: [
+      "On nous ment depuis toujours",
+      "Ils mentent. On résiste.",
+      "La vérité est en train de devenir un produit de contrebande",
+      "Le mensonge est le nouveau confort",
+      "Ne crois rien de ce qu'on te dit",
+      "Voir clair est un acte de résistance",
+      "L'information est devenue une arme de distraction massive",
+      "Le vrai danger, c'est de tout avaler sans rien mâcher",
+      "La réalité est devenue optionnelle",
+      "Le silence aussi est un mensonge",
+    ],
+  },
+  {
+    id: "officiel",
+    name: "Style document officiel / censuré",
+    icon: "⬛",
+    slogans: [
+      "[ Information classifiée ]",
+      "[ Données expurgées — Loi République ]",
+      "Redacted — Top Secret",
+      "Ce message a été approuvé par le Ministère de la Vérité",
+      "Document classifié — Diffusion interdite",
+      "⚠️ Contenu susceptible de vous réveiller",
+      "[ Cette affirmation a été fact-checkée : VRAIE — ne pas diffuser ]",
+      "Pièce à conviction N° ONM-001",
+      "Rapport confidentiel — À détruire après lecture",
+      "Approuvé par le Ministère de la Pensée Unique",
+    ],
+  },
+  {
+    id: "provocateur",
+    name: "Provocateur & ironique",
+    icon: "💀",
+    slogans: [
+      "Consomme. Obéis. Oublie.",
+      "Métro. Boulot. Mensonges.",
+      "Libre dans ta tête ? Vérifie tes notifications.",
+      "La démocratie, c'est voter tous les 5 ans pour choisir qui te mentira",
+      "Éteins la télé, allume ton cerveau",
+      "Ton opinion nous intéresse — elle a été enregistrée",
+      "Rebelle-toi — mais en story Instagram, hein",
+      "Ta révolte est un produit comme un autre",
+      "Le système t'offre 15 minutes de gloire pour oublier 50 ans d'absence",
+      "Ton confort est le prix de ton silence",
+    ],
+  },
+  {
+    id: "resistance",
+    name: "Résistance & empowerment",
+    icon: "✊",
+    slogans: [
+      "Le premier geste de rébellion, c'est de ne pas avoir peur",
+      "Ils veulent ton silence. Donne-leur ta voix.",
+      "Penser par soi-même est devenu un acte de bravoure",
+      "Douter est un devoir civique",
+      "Les murs ont des oreilles. Les écrans ont des yeux.",
+      "Tant qu'on saura lire entre les lignes, on gagnera",
+      "La résistance commence là où s'arrête le scroll",
+      "Ouvrir les yeux, c'est déjà se battre",
+      "Ils misent sur ton indifférence. Ne les laisse pas gagner.",
+      "Ta conscience est la seule arme qu'ils ne peuvent pas confisquer",
+    ],
+  },
+  {
+    id: "cash",
+    name: "Cash / sans filtre",
+    icon: "🖕",
+    slogans: [
+      "La vérité est un acte de résistance",
+      "Ils veulent ton silence. Donne-leur ta voix.",
+      "Le système te veut docile. Soit indocile.",
+      "L'ignorance est un choix — celui de la majorité",
+      "Regarde ce qu'ils ne veulent pas que tu voies",
+      "Ta conscience te regarde. Qu'est-ce que tu lui réponds ?",
+      "Arrête d'applaudir. Commence à agir.",
+      "Derrière chaque écran, il y a un manipulateur bien payé",
+      "N'achète pas leur histoire. Écris la tienne.",
+      "Ils comptent sur ta fatigue. Repose-toi et reviens plus fort.",
+    ],
+  },
+  {
+    id: "officiel-detourne",
+    name: "Faux slogans officiels",
+    icon: "🎭",
+    slogans: [
+      "Entrée libre — Sortie consciente",
+      "PROPRIÉTÉ DE L'ÉTAT — Ne pas penser sans autorisation",
+      "Ce citoyen a été déclaré conscient — À surveiller",
+      "Avis au public : la vérité circule dans cette zone",
+      "MINISTÈRE DE LA VÉRITÉ — Tout ce qui n'est pas interdit est obligatoire",
+      "⚠️ Zone de libre-pensée — Pénétrer à vos risques et périls",
+      "DÉCRET N° ONM-001 : Le silence est une forme de complicité",
+      "CERTIFICAT DE CONFORMITÉ — Cet individu pense encore",
+      "BIENVENUE EN RÉALITÉ — Les sorties de secours ne sont pas signalées",
+      "HORAIRES D'ÉVEIL : 24h/24 — La conscience ne prend pas de congés",
+    ],
+  },
+  {
+    id: "punchlines",
+    name: "Punchlines",
+    icon: "🔥",
+    slogans: [
+      "On nous ment. Depuis toujours.",
+      "Croire, c'est confortable. Douter, c'est nécessaire.",
+      "Le bruit est fait pour couvrir le silence des honnêtes",
+      "Ta pensée t'appartient encore — pour combien de temps ?",
+      "Le mensonge a de la mémoire. La vérité aussi.",
+      "Il n'y a pas d'alternative — c'est ce qu'ils veulent te faire croire",
+      "La peur est leur meilleure alliée",
+      "N'oublie pas : ils veulent que tu regardes ailleurs",
+      "La vérité dérange, le mensonge arrange — à toi de choisir",
+      "Douter, c'est le début de la liberté",
+    ],
+  },
+];
+
+export const allSlogans = sloganCategories.flatMap((cat) => cat.slogans);
